@@ -26,6 +26,36 @@ h1 {
     /* Adds 20px margin on top and bottom, 0 on sides */
 }
 
+
+/* Type Selector: Targets all <img> elements */
+img {
+    max-width: 200px;
+    /* Limits the image width to 200 pixels */
+    height: auto;
+    /* Maintains aspect ratio by auto-adjusting height */
+}
+
+/* Type Selector: Targets <form> elements */
+form {
+    width: 300px;
+    /* Sets the form width to 300 pixels */
+    margin: 20px auto;
+    /* Centers the form with 20px top/bottom margin */
+    padding: 20px;
+    /* Adds 20px padding inside the form */
+    border: 1px solid #ccc;
+    /* Adds a 1px solid light gray border */
+    background-color: #fff;
+    /* Sets the background color to white */
+}
+
+/* Type Selector: Targets <label> elements */
+label {
+    font-weight: bold;
+    /* Makes the text bold */
+}
+
+
 /* Class Selector: Targets elements with class="intro" */
 .intro {
     background-color: #ffcccc;
@@ -34,22 +64,6 @@ h1 {
     /* Adds 10px padding inside the element */
     margin: 10px;
     /* Adds 10px margin outside the element */
-}
-
-/* ID Selector: Targets the element with id="header" */
-#header {
-    text-align: center;
-    /* Centers the text horizontally */
-    font-size: 24px;
-    /* Sets the font size to 24 pixels */
-    font-weight: bold;
-    /* Makes the text bold */
-    padding: 15px;
-    /* Adds 15px padding inside the element */
-    background-color: #333;
-    /* Sets a dark gray background color */
-    color: white;
-    /* Sets the text color to white */
 }
 
 /* Class Selector: Targets elements with class="box" for box model styling */
@@ -86,32 +100,20 @@ h1 {
     /* Adds 20px margin on top and bottom */
 }
 
-/* Type Selector: Targets all <img> elements */
-img {
-    max-width: 200px;
-    /* Limits the image width to 200 pixels */
-    height: auto;
-    /* Maintains aspect ratio by auto-adjusting height */
-}
-
-/* Type Selector: Targets <form> elements */
-form {
-    width: 300px;
-    /* Sets the form width to 300 pixels */
-    margin: 20px auto;
-    /* Centers the form with 20px top/bottom margin */
-    padding: 20px;
-    /* Adds 20px padding inside the form */
-    border: 1px solid #ccc;
-    /* Adds a 1px solid light gray border */
-    background-color: #fff;
-    /* Sets the background color to white */
-}
-
-/* Type Selector: Targets <label> elements */
-label {
+/* ID Selector: Targets the element with id="header" */
+#header {
+    text-align: center;
+    /* Centers the text horizontally */
+    font-size: 24px;
+    /* Sets the font size to 24 pixels */
     font-weight: bold;
     /* Makes the text bold */
+    padding: 15px;
+    /* Adds 15px padding inside the element */
+    background-color: #333;
+    /* Sets a dark gray background color */
+    color: white;
+    /* Sets the text color to white */
 }
 
 /* Attribute Selector: Targets <input> elements with type="text" */
@@ -145,6 +147,26 @@ input[type="submit"]:hover {
     background-color: #45a049;
     /* Darkens the background color on hover */
 }
+
+/* CSS Positioning Example */
+.container2 {
+    position: relative;
+    height: 200px;
+    border: 2px solid gray;
+    margin-top: 50px;
+}
+
+.box2 {
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+}
+
 
 /* Media Query: Applies styles for screens smaller than 600px */
 @media (max-width: 600px) {
